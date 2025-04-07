@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Error 1: Root element is "Hotel" instead of "Hotels" -->
+<Hotel>
+  <!-- Example hotel from Figure 1 -->
+  <Hotel Rating="4.2">
+    <Name>Westin</Name>
+    <Phone>480-968-8885</Phone>
+    <Phone>800-937-8461</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>11</Number>
+      <Street>E.7th St</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+  </Hotel>
+  
+  <!-- Error 2: Required attribute NearestAirport is missing -->
+  <Hotel Rating="4.5">
+    <Name>Marriott Downtown</Name>
+    <Phone>212-768-4400</Phone>
+    <Address>
+      <Number>1535</Number>
+      <Street>Broadway</Street>
+      <City>New York</City>
+      <State>NY</State>
+      <Zip>10036</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel>
+    <Name>Hilton San Francisco</Name>
+    <Phone>415-771-1400</Phone>
+    <Address NearestAirport="San Francisco International">
+      <Number>333</Number>
+      <Street>O'Farrell Street</Street>
+      <City>San Francisco</City>
+      <State>CA</State>
+      <Zip>94102</Zip>
+    </Address>
+  </Hotel>
+
+  <!-- Error 3: Phone element is missing -->
+  <Hotel Rating="4.8">
+    <Name>Ritz-Carlton</Name>
+    <Address NearestAirport="Logan International">
+      <Number>10</Number>
+      <Street>Avery Street</Street>
+      <City>Boston</City>
+      <State>MA</State>
+      <Zip>02111</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel>
+    <Name>Four Seasons</Name>
+    <Phone>312-280-8800</Phone>
+    <Address NearestAirport="O'Hare International">
+      <Number>120</Number>
+      <Street>East Delaware Place</Street>
+      <City>Chicago</City>
+      <State>IL</State>
+      <Zip>60611</Zip>
+    </Address>
+  </Hotel>
+
+  <!-- Error 4: Address element has no closing tag -->
+  <Hotel Rating="4.7">
+    <Name>Waldorf Astoria</Name>
+    <Phone>702-590-8888</Phone>
+    <Address NearestAirport="McCarran International">
+      <Number>3752</Number>
+      <Street>Las Vegas Blvd South</Street>
+      <City>Las Vegas</City>
+      <State>NV</State>
+      <Zip>89158</Zip>
+  </Hotel>
+
+  <!-- Error 5: Two names provided for one hotel -->
+  <Hotel Rating="4.6">
+    <Name>InterContinental</Name>
+    <Name>InterContinental Atlanta</Name>
+    <Phone>404-946-9000</Phone>
+    <Phone>800-422-7456</Phone>
+    <Address NearestAirport="Hartsfield-Jackson Atlanta">
+      <Number>3315</Number>
+      <Street>Peachtree Road NE</Street>
+      <City>Atlanta</City>
+      <State>GA</State>
+      <Zip>30326</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel>
+    <Name>Grand Hyatt</Name>
+    <Phone>206-774-1234</Phone>
+    <Address NearestAirport="Seattle-Tacoma International">
+      <Number>721</Number>
+      <Street>Pine Street</Street>
+      <City>Seattle</City>
+      <State>WA</State>
+      <Zip>98101</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel Rating="4.3">
+    <Name>Sheraton Waikiki</Name>
+    <Phone>808-922-4422</Phone>
+    <Address NearestAirport="Daniel K. Inouye International">
+      <Number>2255</Number>
+      <Street>Kalakaua Avenue</Street>
+      <City>Honolulu</City>
+      <State>HI</State>
+      <Zip>96815</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel>
+    <Name>Fairmont</Name>
+    <Phone>512-549-8100</Phone>
+    <Address NearestAirport="Austin-Bergstrom International">
+      <Number>101</Number>
+      <Street>Red River Street</Street>
+      <City>Austin</City>
+      <State>TX</State>
+      <Zip>78701</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel Rating="4.9">
+    <Name>The Peninsula</Name>
+    <Phone>312-337-2888</Phone>
+    <Phone>800-462-7899</Phone>
+    <Address NearestAirport="O'Hare International">
+      <Number>108</Number>
+      <Street>East Superior Street</Street>
+      <City>Chicago</City>
+      <State>IL</State>
+      <Zip>60611</Zip>
+    </Address>
+  </Hotel>
+</Hotel> 
